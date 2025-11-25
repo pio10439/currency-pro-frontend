@@ -1,29 +1,42 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "CurrencyPro",
+    "slug": "currency-pro",
     "version": "1.0.0",
     "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      "package": "com.pio10439.currencypro"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pio10439.currencypro"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#0066ff"
+        }
+      ]
+    ],
+    "extra": {
+      "backendUrl": "https://currency-pro-backend.onrender.com",
+      "eas": {
+        "projectId": "57b223fe-b435-4423-a0f8-c707dbef8b6e"
+      }
+    },
+    "owner": "pi1104393"
   }
 }
